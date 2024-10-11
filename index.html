@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport Company</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>OKEYSON</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#booking">Book a Ride</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h2>Your Trusted Transport Partner</h2>
+            <p>Safe, reliable, and on time transport services for all your needs.</p>
+            <a href="#booking" class="btn">Book a Ride</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>At TransMove, we are committed to providing top-notch transport services that ensure your goods are delivered safely and on time. With years of experience in the industry, our team is dedicated to delivering the highest quality service with professionalism and care.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-card">
+                <h3>Freight Transport</h3>
+                <p>We provide reliable freight services to ensure your goods are delivered to their destination safely and efficiently.</p>
+            </div>
+            <div class="service-card">
+                <h3>Logistics Management</h3>
+                <p>Our logistics team will handle all aspects of planning, implementation, and coordination of your transportation needs.</p>
+            </div>
+            <div class="service-card">
+                <h3>Fleet Services</h3>
+                <p>Our fleet of well-maintained vehicles is at your disposal for any transportation task you may have.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking">
+        <div class="container">
+            <h2>Book a Ride</h2>
+            <form action="#" method="post" class="booking-form">
+                <label for="vehicle-type">Select Vehicle Type:</label>
+                <select id="vehicle-type" name="vehicle_type" required>
+                    <option value="sedan">Sedan</option>
+                    <option value="suv">SUV</option>
+                    <option value="truck">Truck</option>
+                    <option value="bus">Bus</option>
+                </select>
+
+                <label for="pickup-location">Pick-Up Location:</label>
+                <input type="text" id="pickup-location" name="pickup_location" required>
+
+                <label for="dropoff-location">Drop-Off Location:</label>
+                <input type="text" id="dropoff-location" name="dropoff_location" required>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <button type="submit">Book Ride</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to request a service, feel free to reach out to us.</p>
+            <form action="#" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 TransMove. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
